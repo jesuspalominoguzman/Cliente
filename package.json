@@ -1,0 +1,17 @@
+{
+  "name": "cliente",
+  "version": "1.0.0",
+  "description": "asignatura cliente",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.29.7",
+    "jest": "^30.5.2"
+  }
+}
