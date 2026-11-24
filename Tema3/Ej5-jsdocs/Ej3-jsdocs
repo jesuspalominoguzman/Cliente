@@ -1,0 +1,33 @@
+/**
+ * @file Script interactivo para demostrar el uso de cuadros de diálogo del navegador (alert, confirm y prompt).
+ * @author Jesús Palomino Guzmán
+ */
+
+// Muestra una alerta inicial informativa al cargar la página
+window.alert("Esto es un mensaje de alerta! Clica para continuar");
+
+/**
+ * Almacena el resultado booleano tras preguntar al usuario mediante un cuadro de confirmación.
+ * Será `true` si pulsa Aceptar, o `false` si pulsa Cancelar.
+ * @type {boolean}
+ */
+let confirmacion = window.confirm(
+  "Te mostraré un mensaje con la respuesta de este confirm"
+);
+
+// Evalúa la respuesta del usuario y muestra la alerta correspondiente
+if (confirmacion) {
+  window.alert("Has confirmado!");
+} else {
+  window.alert("Has cancelado!");
+}
+
+/**
+ * Almacena la cadena de texto introducida por el usuario en el cuadro de entrada,
+ * o `null` si el usuario cancela el diálogo.
+ * @type {string|null}
+ */
+let userPrompt = window.prompt("Escribe algo para continuar", "Algo");
+
+// Muestra por pantalla el valor recogido en el prompt
+window.alert("Has escrito: " + userPrompt);

@@ -33,3 +33,11 @@ let cartaPokemon = {
     japones: "SAR",
   },
 };
+
+function clavesObjeto(objeto) {
+  return Object.keys(objeto);
+}
+
+function valoresObjeto(objeto) {
+  return Object.values(objeto);
+}
